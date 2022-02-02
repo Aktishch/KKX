@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная</title>
+</head>
+<body>
+
+    <!-- Верхнее меню -->
+    <nav class="nav-top container-block">
+        <ul class="nav-top__listing text-16">
+            <li class="nav-top__item">
+                <a class="nav-top__link" href="#">
+                    <svg class="nav-top__icon icon">
+                        <use xlink:href="icons/sprite.svg#school" />
+                    </svg>
+                    Школа одаренных детей
+                </a>
+            </li>
+            <li class="nav-top__item">
+                <a class="nav-top__link" href="#">
+                    <svg class="nav-top__icon icon">
+                        <use xlink:href="icons/sprite.svg#document" />
+                    </svg>
+                    Документы и отчеты
+                </a>
+            </li>
+            <li class="nav-top__item">
+                <a class="nav-top__link" href="#">
+                    <svg class="nav-top__icon icon">
+                        <use xlink:href="icons/sprite.svg#media-books" />
+                    </svg>
+                    Научная деятельность
+                </a>
+            </li>
+            <li class="nav-top__item">
+                <a class="nav-top__link" href="#">
+                    <svg class="nav-top__icon icon">
+                        <use xlink:href="icons/sprite.svg#hall" />
+                    </svg>
+                    Концертный зал
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Шапка документа -->
+    <header class="header container-block"> 
+        <a class="header__logo" href="#">
+            <img class="header__logo-image" src="img/logo.png" alt="" loading="lazy">
+        </a>
+        <div class="header__director text-14">
+            <div class="header__person">
+                <img class="header__person-image" src="img/director.png" alt="" loading="lazy">
+            </div>
+            <div class="header__director-info">
+                <div class="header__info-title">ВИКТОР ЗАХАРЧЕНКО</div>
+                <div class="header__info-subtitle">Художественный руководитель<br>и главный дирижер</div>
+                <a class="header__info-link page-link" href="#">Узнать больше</a>
+            </div>
+        </div>
+        <div class="header__contact text-14">
+            <div class="header__version">
+                <svg class="header__version-icon icon text-20">
+                    <use xlink:href="icons/sprite.svg#eye" />
+                </svg>
+                ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ
+            </div>
+            <div class="header__address">
+                Россия, 350063, Краснодар, ул. Красная, 5 Билетная касса: <a class="header__tel" href="tel: +78612684426">8 (861) 268 44 26</a>
+            </div>
+            <div class="header__social social text-24">
+                <a class="social__item social__item--color-main" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#ok" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-main" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#yt" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-main" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#inst" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-main" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#fb" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-main" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#tw" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-main" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#vk" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигационное меню -->
+    <nav class="nav container-block">
+        <div class="nav__burger" id="burger">
+            <span class="nav__burger-line nav__line-1"></span>
+            <span class="nav__burger-line nav__line-2"></span>
+            <span class="nav__burger-line nav__line-3"></span>
+        </div>
+        <ul class="nav__items text-16">
+            <li class="nav__item">
+                <a class="nav__link" href="#">Онлайн-магазин</a>
+            </li>
+            <li class="nav__item">
+                <span class="nav__link nav__submenu">
+                    <input class="nav__checkbox" id="submenu" type="checkbox">
+                    <label class="nav__label" for="submenu">
+                        О хоре
+                        <svg class="nav__icon icon">
+                            <use xlink:href="icons/sprite.svg#arrow" />
+                        </svg>
+                    </label>
+                    <ul class="nav__listing listing text-16">
+                        <li class="listing__item">
+                            <a class="listing__link" href="#">История</a>
+                        </li>
+                        <li class="listing__item">
+                            <a class="listing__link" href="#">Состав</a>
+                        </li>
+                        <li class="listing__item">
+                            <a class="listing__link" href="#">Медиа</a>
+                        </li>
+                    </ul>
+                </span>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">СМИ о нас</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Гастроли</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Афиша</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Контакты</a>
+            </li>
+        </ul>
+        <span class="nav__basket">
+            <svg class="nav__basket-icon icon">
+                <use xlink:href="icons/sprite.svg#basket" />
+            </svg>
+            <span class="nav__basket-text">Корзина</span>
+            <span class="nav__basket-quantity">(2)</span>
+        </span>
+        <button class="nav__btn btn btn--light">Купить билет онлайн</button>
+    </nav>
+
+    <!-- Мобильное меню -->
+    <section class="mobile">
+        <header class="mobile__head">
+            <a class="mobile__main" href="#">
+                <img class="mobile__logo" src="img/logo.png" alt="" loading="lazy">
+            </a>
+            <span class="mobile__exit">&#10006;</span>
+        </header>
+        <nav class="mobile__nav text-18">
+            <a class="mobile__link" href="#">Онлайн-магазин</a>
+            <span class="mobile__link mobile__submenu">
+                О хоре
+                <svg class="mobile__icon icon text-12">
+                    <use xlink:href="icons/sprite.svg#arrow" />
+                </svg>
+            </span>
+            <ul class="mobile__listing text-16">
+                <li class="mobile__listing-item">
+                    <a class="mobile__listing-link" href="#">История</a>
+                </li>
+                <li class="mobile__listing-item">
+                    <a class="mobile__listing-link" href="#">Состав</a>
+                </li>
+                <li class="mobile__listing-item">
+                    <a class="mobile__listing-link" href="#">Медиа</a>
+                </li>
+            </ul>
+            <a class="mobile__link" href="#">СМИ о нас</a>
+            <a class="mobile__link" href="#">Гастроли</a>
+            <a class="mobile__link" href="#">Афиша</a>
+            <a class="mobile__link" href="#">Школа одаренных детей</a>
+            <a class="mobile__link" href="#">Документы и отчеты</a>
+            <a class="mobile__link" href="#">Научная деятельность</a>
+            <a class="mobile__link" href="#">Концертный зал</a>
+            <a class="mobile__link" href="#">Контакты</a>
+        </nav>
+        <div class="mobile__contact contact-info text-16">
+            <div class="contact-info__item">
+                <div class="contact-info__title">
+                    <svg class="icon">
+                        <use xlink:href="icons/sprite.svg#address" />
+                    </svg>
+                    Адрес
+                </div>
+                <div class="contact-info__address">г. Краснодар ул. Красная, 5</div>
+            </div>
+            <div class="contact-info__item">
+                <div class="contact-info__title">
+                    <svg class="icon">
+                        <use xlink:href="icons/sprite.svg#tel" />
+                    </svg>
+                    Билетная касса
+                </div>
+                <a class="contact-info__tel text-22" href="tel: +78612684426">8 (861) 268 44 26</a>
+            </div>
+            <div class="contact-info__item">
+                <div class="contact-info__title">
+                    <svg class="icon">
+                        <use xlink:href="icons/sprite.svg#time" />
+                    </svg>
+                    Режим работы
+                </div>
+                <div class="contact-info__address">
+                    С 9:00 - 18:00<br>
+                    <span class="contact-info__title">(перерыв с 13: 00-14: 00)</span><br>
+                    Выходные: сб, вс
+                </div>
+            </div>
+        </div>
+        <div class="mobile__social social">
+            <a class="social__item social__item--color-white" href="#">
+                <svg class="social__icon icon">
+                    <use xlink:href="icons/sprite.svg#ok" />
+                </svg>
+            </a>
+            <a class="social__item social__item--color-white" href="#">
+                <svg class="social__icon icon">
+                    <use xlink:href="icons/sprite.svg#yt" />
+                </svg>
+            </a>
+            <a class="social__item social__item--color-white" href="#">
+                <svg class="social__icon icon">
+                    <use xlink:href="icons/sprite.svg#inst" />
+                </svg>
+            </a>
+            <a class="social__item social__item--color-white" href="#">
+                <svg class="social__icon icon">
+                    <use xlink:href="icons/sprite.svg#fb" />
+                </svg>
+            </a>
+            <a class="social__item social__item--color-white" href="#">
+                <svg class="social__icon icon">
+                    <use xlink:href="icons/sprite.svg#tw" />
+                </svg>
+            </a>
+            <a class="social__item social__item--color-white" href="#">
+                <svg class="social__icon icon">
+                    <use xlink:href="icons/sprite.svg#vk" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ККХ -->
+    <section class="chorus container-block">
+        <h1 class="chorus__title page-title">Кубанский Казачий Хор</h1>
+        <h2 class="chorus__subtitle page-subtitle">Единственный в России профессиональный коллектив народного творчества, имеющий непрерывную преемственную историю с начала XIX века</h2>
+        <div class="chorus__background">
+            <img class="chorus__background-image" src="img/chorus.png" alt="" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Музыкальный блок -->
+    <section class="musical-block">
+        <div class="player -player- container-block">
+            <div class="player__container">
+                <div class="player__playlist">
+                    <button class="player__playlist-btn btn btn--light" data-fancybox data-type="ajax" data-src="modals/player.html">Открыть плейлист</button>
+                    <img class="player__playlist-image" src="img/player.png" alt="" loading="lazy">
+                </div>
+                <div class="player__song text-14">
+                    <div class="player__info">
+                        <div class="player__song-name text-22 -song-">Темно бледно-зеленая детская комнатка</div>
+                        <div class="player__song-author -cover-">Музыка: В. Захарченко; Слова: А. Блока</div>
+                    </div>
+                    <audio class="player__song-audio -audio-" src="audio/Track1.mp3"></audio>
+                    <div class="player__track">
+                        <svg class="player__prev player__icon -prev- icon">
+                            <use xlink:href="icons/sprite.svg#player-prev" />
+                        </svg>
+                        <svg class="player__play player__icon -play- icon">
+                            <use xlink:href="icons/sprite.svg#player-play" />
+                        </svg>
+                        <svg class="player__next player__icon -next- icon">
+                            <use xlink:href="icons/sprite.svg#player-next" />
+                        </svg>
+                        <div class="player__line -progress-line-">
+                            <span class="player__progress -progress-"></span>
+                        </div>
+                        <div class="player__time"> 
+                            <span class="-time-start-">1:10</span> / <span class="-time-end-">2:48</span>
+                        </div>
+                        <svg class="player__volume player__icon -volume- icon">
+                            <use xlink:href="icons/sprite.svg#player-volume" />
+                        </svg>
+                        <div class="player__list" data-fancybox data-type="ajax" data-src="modals/player.html">&#9776;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="concert container-block">
+            <h1 class="concert__title page-title">Ближайшие концерты</h1>
+            <h2 class="concert__subtitle page-subtitle">Вы можете ознакомиться с ближайшими концертами и купить билет</h2>
+            <div class="concert__slider">
+                <div class="image-slider swiper-container">
+                    <div class="image-slider__wrapper swiper-wrapper">
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="concert__ticket ticket">
+                                <img class="concert__ticket-image ticket__image" src="img/concert_1.png" alt="" loading="lazy">
+                                <div class="concert__ticket-info ticket__info text-16">
+                                    <span class="concert__ticket-title ticket__title text-18">Концерт, посвященный 210-летию государственного академического..</span>
+                                    <span class="concert__ticket-subtitle ticket__subtitle">
+                                        <svg class="concert__ticket-icon ticket__subtitle-icon icon">
+                                            <use xlink:href="icons/sprite.svg#geo" />
+                                        </svg>
+                                        г. Москва
+                                    </span>
+                                    <span class="concert__ticket-subtitle ticket__subtitle">
+                                        <svg class="concert__ticket-icon ticket__subtitle-icon icon">
+                                            <use xlink:href="icons/sprite.svg#date" />
+                                        </svg>
+                                        30 октября 2021  |  18:00
+                                    </span>
+                                    <div class="concert__ticket-buttons ticket__buttons">
+                                        <button class="concert__ticket-btn ticket__btn btn btn--grey">Подробнее</button>
+                                        <button class="concert__ticket-btn ticket__btn btn btn--light">
+                                            <svg class="icon text-14">
+                                                <use xlink:href="icons/sprite.svg#basket" />
+                                            </svg>
+                                            Купить билет
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="concert__ticket ticket">
+                                <img class="concert__ticket-image ticket__image" src="img/concert_2.png" alt="" loading="lazy">
+                                <div class="concert__ticket-info ticket__info text-16">
+                                    <span class="concert__ticket-title ticket__title text-18">Концерт Кубанского казачьего хора в г. Тверь</span>
+                                    <span class="concert__ticket-subtitle ticket__subtitle">
+                                        <svg class="concert__ticket-icon ticket__subtitle-icon icon">
+                                            <use xlink:href="icons/sprite.svg#geo" />
+                                        </svg>
+                                        г. Тверь
+                                    </span>
+                                    <span class="concert__ticket-subtitle ticket__subtitle">
+                                        <svg class="concert__ticket-icon ticket__subtitle-icon icon">
+                                            <use xlink:href="icons/sprite.svg#date" />
+                                        </svg>
+                                        30 октября 2021  |  18:00
+                                    </span>
+                                    <div class="concert__ticket-buttons ticket__buttons">
+                                        <button class="concert__ticket-btn ticket__btn btn btn--grey">Подробнее</button>
+                                        <button class="concert__ticket-btn ticket__btn btn btn--light">
+                                            <svg class="icon text-14">
+                                                <use xlink:href="icons/sprite.svg#basket" />
+                                            </svg>
+                                            Купить билет
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="concert__ticket ticket">
+                                <img class="concert__ticket-image ticket__image" src="img/concert_3.png" alt="" loading="lazy">
+                                <div class="concert__ticket-info ticket__info text-16">
+                                    <span class="concert__ticket-title ticket__title text-18">Концерт, посвященный 210-летию государственного академического..</span>
+                                    <span class="concert__ticket-subtitle ticket__subtitle">
+                                        <svg class="concert__ticket-icon ticket__subtitle-icon icon">
+                                            <use xlink:href="icons/sprite.svg#geo" />
+                                        </svg>
+                                        г. Москва
+                                    </span>
+                                    <span class="concert__ticket-subtitle ticket__subtitle">
+                                        <svg class="concert__ticket-icon ticket__subtitle-icon icon">
+                                            <use xlink:href="icons/sprite.svg#date" />
+                                        </svg>
+                                        30 октября 2021  |  18:00
+                                    </span>
+                                    <div class="concert__ticket-buttons ticket__buttons">
+                                        <button class="concert__ticket-btn ticket__btn btn btn--grey">Подробнее</button>
+                                        <button class="concert__ticket-btn ticket__btn btn btn--light">
+                                            <svg class="icon text-14">
+                                                <use xlink:href="icons/sprite.svg#basket" />
+                                            </svg>
+                                            Купить билет
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="concert__ticket ticket">
+                                <img class="concert__ticket-image ticket__image" src="img/concert_4.png" alt="" loading="lazy">
+                                <div class="concert__ticket-info ticket__info text-16">
+                                    <span class="concert__ticket-title ticket__title text-18">Концерт Кубанского казачьего хора в г. Тверь</span>
+                                    <span class="concert__ticket-subtitle ticket__subtitle">
+                                        <svg class="concert__ticket-icon ticket__subtitle-icon icon">
+                                            <use xlink:href="icons/sprite.svg#geo" />
+                                        </svg>
+                                        г. Тверь
+                                    </span>
+                                    <span class="concert__ticket-subtitle ticket__subtitle">
+                                        <svg class="concert__ticket-icon ticket__subtitle-icon icon">
+                                            <use xlink:href="icons/sprite.svg#date" />
+                                        </svg>
+                                        30 октября 2021  |  18:00
+                                    </span>
+                                    <div class="concert__ticket-buttons ticket__buttons">
+                                        <button class="concert__ticket-btn ticket__btn btn btn--grey">Подробнее</button>
+                                        <button class="concert__ticket-btn ticket__btn btn btn--light">
+                                            <svg class="icon text-14">
+                                                <use xlink:href="icons/sprite.svg#basket" />
+                                            </svg>
+                                            Купить билет
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="concert__ticket ticket">
+                                <img class="concert__ticket-image ticket__image" src="img/concert_5.png" alt="" loading="lazy">
+                                <div class="concert__ticket-info ticket__info text-16">
+                                    <span class="concert__ticket-title ticket__title text-18">Концерт Кубанского казачьего хора в г. Тверь</span>
+                                    <span class="concert__ticket-subtitle ticket__subtitle">
+                                        <svg class="concert__ticket-icon ticket__subtitle-icon icon">
+                                            <use xlink:href="icons/sprite.svg#geo" />
+                                        </svg>
+                                        г. Тверь
+                                    </span>
+                                    <span class="concert__ticket-subtitle ticket__subtitle">
+                                        <svg class="concert__ticket-icon ticket__subtitle-icon icon">
+                                            <use xlink:href="icons/sprite.svg#date" />
+                                        </svg>
+                                        30 октября 2021  |  18:00
+                                    </span>
+                                    <div class="concert__ticket-buttons ticket__buttons">
+                                        <button class="concert__ticket-btn ticket__btn btn btn--grey">Подробнее</button>
+                                        <button class="concert__ticket-btn ticket__btn btn btn--light">
+                                            <svg class="icon text-14">
+                                                <use xlink:href="icons/sprite.svg#basket" />
+                                            </svg>
+                                            Купить билет
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Директор -->
+    <section class="director container-block">
+        <h1 class="director__title page-title">Виктор Захарченко - и академик и казак</h1>
+        <h2 class="director__subtitle page-subtitle">Генеральный директор ГБНТУК КК "Кубанский казачий хор"</h2>
+        <div class="director__container text-16">
+            <img class="director__image" src="img/actor.png" alt="" loading="lazy">
+            <div class="director__info director__general">
+                <h2 class="director__info-title text-20">Руководитель</h2>
+                <p class="director__info-text">
+                    Генеральный директор ГБНТУК КК  "Кубанский казачий хор". Художественный руководитель
+                    и главный дирижер Государственного академического Кубанского казачьего хора
+                </p>
+                <a class="director__info-link page-link" href="#">Подробнее</a>
+            </div>
+            <div class="director__info director__actor">
+                <h2 class="director__info-title text-20">заслуженный артист</h2>
+                <p class="director__info-text">
+                    Герой труда РФ, народный артист России, Украины, Адыгеи, Абхазиии и Карачаево-Черкесии,
+                    заслуженный артист Южной Осетии, заслуженный деятель искусств Чеченской...
+                </p>
+                <a class="director__info-link page-link" href="#">Подробнее</a>
+            </div>
+            <div class="director__info director__activist">
+                <h2 class="director__info-title text-20">деятель</h2>
+                <p class="director__info-text">
+                    член Совета по государственной культурной политике при Председателе Совета Федерации Федерального 
+                    Собрания РФ, член Патриаршего Совета по культуре, доктор искусствоведения, профессор...
+                </p>
+                <a class="director__info-link page-link" href="#">Подробнее</a>
+            </div>
+            <div class="director__info director__cossack">
+                <h2 class="director__info-title text-20">казак</h2>
+                <p class="director__info-text">
+                    Я - казак по рождению и воспитанию. Народные и духовные песни слышал с детства, впитал
+                    казачьи традиции…  Невероятно сильное желание стать музыкантом было у меня всегда. 
+                </p>
+                <a class="director__info-link page-link" href="#">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Новости -->
+    <section class="news container-block">
+        <h1 class="news__title page-title">Новости</h1>
+        <h2 class="news__subtitle page-subtitle">Актуальные новости о жизни нашей организации</h2>
+        <div class="feed text-16">
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_1.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        1 сентября 2021 года стартовала всероссийская
+                        культурная программа «Пушкинская карта».
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_2.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        Внимание! Появилась вакансия!
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item feed__item--hidden">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_3.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        С Днем Рождения, Сергей Николаевич!
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item feed__item--hidden">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_4.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        25 августа 1792 года на Тамань
+                        высадились первые Черноморские казаки
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+        </div>
+        <a class="news__btn btn btn--light" href="">Показать все новости</a>
+    </section>
+
+    <!-- Продукция -->
+    <section class="production container-block">
+        <div class="production__item">
+            <div class="production__item-border">
+                <span class="production__title text-24">фирменная продукция</span>
+                <p class="production__subtitle text-14">
+                    В нашем интернет-магазине вы  сможете купить аудио-видеотовары, 
+                    книги, текстильнкую пролукцию, а также брендированные сувениры
+                </p>
+                <button class="production__btn btn btn--grey">Подробнее</button>
+            </div>
+            <div class="production__clothes">
+                <img class="production__clothes-image" src="img/production_1.png" alt="" loading="lazy">
+            </div>
+        </div>
+        <div class="production__item">
+            <div class="production__item-border">
+                <span class="production__title text-24">Исторические  костюмы</span>
+                <p class="production__subtitle text-14">
+                    В нашем интернет-магазине вы  сможете купить аудио-видеотовары, 
+                    книги, текстильнкую пролукцию, а также брендированные сувениры
+                </p>
+                <button class="production__btn btn btn--grey">Подробнее</button>
+            </div>
+            <div class="production__clothes">
+                <img class="production__clothes-image" src="img/production_2.png" alt="" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Творчество -->
+    <section class="creativity container-block">
+        <h1 class="creativity__title page-title">Творческие коллективы</h1>
+        <h2 class="creativity__subtitle page-subtitle">Ансамбли и оркестры</h2>
+        <div class="article text-14">
+            <div class="article__item">
+                <div class="article__picture">
+                    <img class="article__image page-image" src="img/creativity_1.png" alt="" loading="lazy">
+                </div>
+                <div class="article__info">
+                    <span class="article__title text-20">АНСАМБЛЬ «КАЗАЧЬЯ ДУША»</span>
+                    <p class="article__text">
+                        Ансамбль «Казачья душа» был создан в 1997 году как
+                        творческое подразделение ГБНТУК КК «Кубанский казачий хор»
+                    </p>
+                    <button class="article__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="article__item">
+                <div class="article__picture">
+                    <img class="article__image page-image" src="img/creativity_2.png" alt="" loading="lazy">
+                </div>
+                <div class="article__info">
+                    <span class="article__title text-20">ОРКЕСТР КАМЕРНОЙ МУЗЫКИ «БЛАГОВЕСТ»</span>
+                    <p class="article__text">
+                        Камерный оркестр отечественной классической музыки
+                        состоит из 10 солистов-инструменталистов
+                    </p>
+                    <button class="article__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="article__item">
+                <div class="article__picture">
+                    <img class="article__image page-image" src="img/creativity_1.png" alt="" loading="lazy">
+                </div>
+                <div class="article__info">
+                    <span class="article__title text-20">ГА ККХ</span>
+                    <p class="article__text">
+                        Ансамбль «Казачья душа» был создан в 1997 году как
+                        творческое подразделение ГБНТУК КК «Кубанский казачий хор»
+                    </p>
+                    <button class="article__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="about-us container-block">
+        <h1 class="about-us__title page-title">Что о нас говорят</h1>
+        <h2 class="about-us__subtitle page-subtitle">Отзывы людей, которые посетили наши концерты</h2>
+        <div class="reviews text-14">
+            <div class="reviews__item">
+                <div class="reviews__head">
+                    <svg class="reviews__icon icon text-16">
+                        <use xlink:href="icons/sprite.svg#marks" />
+                    </svg>
+                    <div class="reviews__name text-18">
+                        Иван Бринкен<span class="about-us__town text-14">Санкт-Петербург</span>
+                    </div>
+                    <div class="reviews__time text-14">
+                        <svg class="reviews__time-icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        <span class="reviews__time-text">12.07.2020  |  12:37:00</span>
+                    </div>
+                </div>
+                <p class="reviews__body">
+                    Слушал песни Вашего хора только через Интернет. Очень понравилось исполнение "Взяв бы я бандуру"
+                    и "Сонце низенько". Жду, когда будет концерт в Петербурге. Если буду в городе, обязательно схожу.
+                </p>
+            </div>
+            <div class="reviews__item">
+                <div class="reviews__head">
+                    <svg class="reviews__icon icon text-16">
+                        <use xlink:href="icons/sprite.svg#marks" />
+                    </svg>
+                    <div class="reviews__name text-18">
+                        Тарасюк Ирина<span class="reviews__town text-14">Пермь</span>
+                    </div>
+                    <div class="reviews__time text-14">
+                        <svg class="reviews__time-icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        <span class="reviews__time-text">12.07.2020  |  12:37:00</span>
+                    </div>
+                </div>
+                <p class="reviews__body">
+                    Добрый день,уважаемые сотрудники Кубанского Казачьего Хора!Концерт у нас в г.Перми прошел еще 28 февраля
+                    2020.Впечатления от вашего концерта настолько сильные до сих пор!!! Очень понравился концерт и все,что
+                    этому способствовало!Кроме того, осталось ощущение,что побывала на родине(я родом из Ставропольского края).
+                    Пришли с подругой к выводу,что ваши концерты очень могли бы способствовать воспитанию патриотизма
+                    среди учащихся довузовских образовательных учреждений Мин Обороны Росии( суворовцев и т.д.).Еще
+                    раз огромное вам спасибо за вашу работу!!!
+                </p>
+            </div>
+            <div class="reviews__item">
+                <div class="reviews__head">
+                    <svg class="reviews__icon icon text-16">
+                        <use xlink:href="icons/sprite.svg#marks" />
+                    </svg>
+                    <div class="reviews__name text-18">
+                        Наталья<span class="reviews__town text-14">Краснодар</span>
+                    </div>
+                    <div class="reviews__time text-14">
+                        <svg class="reviews__time-icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        <span class="reviews__time-text">12.07.2020  |  12:37:00</span>
+                    </div>
+                </div>
+                <p class="reviews__body">
+                    Слушал песни Вашего хора только через Интернет. Очень понравилось исполнение "Взяв бы я бандуру"
+                    и "Сонце низенько". Жду, когда будет концерт в Петербурге. Если буду в городе, обязательно схожу.
+                </p>
+            </div>
+        </div>
+        <a class="about-us__btn btn btn--light" href="">Показать все</a>
+    </section>
+
+    <!-- Партнеры -->
+    <section class="partners container-block">
+        <h1 class="partners__title page-title">Наши партнеры</h1>
+        <h2 class="partners__subtitle page-subtitle">Организации, которые стремятся к тем же целям, что и мы</h2>
+        <div class="partners__slider text-16">
+            <div class="image-slider swiper-container">
+                <div class="image-slider__wrapper swiper-wrapper">
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="partner">
+                            <div class="partner__block">
+                                <img class="partner__image" src="img/partners_1.png" alt="" loading="lazy">
+                            </div>
+                            <div class="partner__block">
+                                <span class="partner__title">Базовый элемент</span>
+                                <a class="partner__link btn btn--grey" href="#">На сайт</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="partner">
+                            <div class="partner__block">
+                                <img class="partner__image" src="img/partners_2.png" alt="" loading="lazy">
+                            </div>
+                            <div class="partner__block">
+                                <span class="partner__title">Вольное дело</span>
+                                <a class="partner__link btn btn--grey" href="#">На сайт</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="partner">
+                            <div class="partner__block">
+                                <img class="partner__image" src="img/partners_3.png" alt="" loading="lazy">
+                            </div>
+                            <div class="partner__block">
+                                <span class="partner__title">Группа ГАЗ</span>
+                                <a class="partner__link btn btn--grey" href="#">На сайт</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="partner">
+                            <div class="partner__block">
+                                <img class="partner__image" src="img/partners_4.png" alt="" loading="lazy">
+                            </div>
+                            <div class="partner__block">
+                                <span class="partner__title">Базовый элемент</span>
+                                <a class="partner__link btn btn--grey" href="#">Банк Союз</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Концертный зал -->
+    <section class="hall container-block">
+        <div class="hall__background">
+            <img class="hall__image" src="img/hall.png" alt="" loading="lazy">
+        </div>
+        <div class="hall__info">
+            <h1 class="hall__title page-title">Концертный зал</h1>
+            <h2 class="hall__subtitle page-subtitle">
+                Центральный концертный зал является универсальной площадкой для проведения концертов,
+                спектаклей, шоу-программ, проведения семинаров, показа кинофильмов.
+            </h2>
+            <p class="hall__text text-16">
+                Заведение включает в себя большой и малый концертные залы, которые укомплектованы звуковым и световым оборудованием.
+                Большой зал рассчитан на 1054 зрителей. В нем часто проводят спектакли, концерты звезд российской и зарубежной эстрады,
+                конференции, корпоративные вечеринки. В концертном зале возможна организация и проведение вечеринок с хорошим звуком и светом.
+                Малый зал вмещает 300 зрителей.Видеоаппаратура: 2 экрана, 2 видеопроектора, возможна запись и прямая трансляция видео на экраны.
+            </p>
+            <a class="hall__link btn btn--light" href="#">Афиша</a>
+        </div>
+    </section>
+
+    <!-- Важная информация -->
+    <section class="information container-block">
+        <h1 class="information__title page-title">Важная информация</h1>
+        <div class="information__items">
+            <a class="information__item" href="">
+                <img class="information__image" src="img/info-1.png" alt="" loading="lazy">
+                <span class="information__text text-16">
+                    Противодействие<br>
+                    коррупции
+                </span>
+            </a>
+            <a class="information__item" href="">
+                <img class="information__image" src="img/info-2.png" alt="" loading="lazy">
+                <span class="information__text text-16">
+                    Государственное<br>
+                    юридическое бюро<br>
+                    Краснодарского края
+                </span>
+            </a>
+            <a class="information__item" href="">
+                <img class="information__image" src="img/info-3.png" alt="" loading="lazy">
+                <span class="information__text text-16">
+                    Противопожарная<br>
+                    пропаганда
+                </span>
+            </a>
+            <a class="information__item" href="">
+                <img class="information__image" src="img/info-4.png" alt="" loading="lazy">
+                <span class="information__text text-16">
+                    Анкета для посетителей об<br>
+                    уровне удовлетворенности<br>
+                    оказываемой услуги
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <div class="map" id="map"></div>
+
+    <!-- Подвал -->
+    <footer class="footer container-block">
+        <div class="footer__item footer__logo text-16">
+            <img class="footer__image" src="img/footer_logo.png" alt="" loading="lazy">
+            <p class="footer__text">
+                Министерство культуры Краснодарского края<br><br>
+                Государственное бюджетное научно-творческое учреждение культуры
+                Краснодарского края “Кубанский казачий хор”
+            </p>
+            <div class="footer__social social text-24">
+                <a class="social__item social__item--color-white" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#ok" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-white" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#yt" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-white" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#inst" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-white" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#fb" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-white" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#tw" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-white" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#vk" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer__item footer__nav text-16">
+            <span class="footer__title text-22">навигация</span>
+            <ul class="footer__listing">
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Афиша</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Гастроли</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Онлайн-магазин</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">СМИ о нас</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Научная деятельность</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__item footer__chorus text-16">
+            <span class="footer__title text-22">о хоре</span>
+            <ul class="footer__listing">
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">История</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Состав</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Медиа</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Концертный зал</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Школа одаренных детей</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Документы и отчеты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__item footer__contact text-16">
+            <div class="footer__title text-22">Контакты</div>
+            <div class="contact-info text-16">
+                <div class="contact-info__item">
+                    <div class="contact-info__title">
+                        <svg class="icon">
+                            <use xlink:href="icons/sprite.svg#address" />
+                        </svg>
+                        Адрес
+                    </div>
+                    <div class="contact-info__address">г. Краснодар ул. Красная, 5</div>
+                </div>
+                <div class="contact-info__item">
+                    <div class="contact-info__title">
+                        <svg class="icon">
+                            <use xlink:href="icons/sprite.svg#tel" />
+                        </svg>
+                        Билетная касса
+                    </div>
+                    <a class="contact-info__tel text-22" href="tel: +78612684426">8 (861) 268 44 26</a>
+                </div>
+                <div class="contact-info__item">
+                    <div class="contact-info__title">
+                        <svg class="icon">
+                            <use xlink:href="icons/sprite.svg#time" />
+                        </svg>
+                        Режим работы
+                    </div>
+                    <div class="contact-info__address">
+                        С 9:00 - 18:00<br>
+                        <span class="contact-info__title">(перерыв с 13: 00-14: 00)</span><br>
+                        Выходные: сб, вс
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Мобильный плеер -->
+    <div class="player-btn">
+        <svg class="player-btn__icon icon">
+            <use xlink:href="icons/sprite.svg#player" />
+        </svg>
+    </div> 
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/map.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/card-product.js"></script>
+    <script src="js/smart-menu.js"></script>
+    <script src="js/svg-ns.js"></script>
+    <script src="js/news-block.js"></script>
+    <script src="js/form-submit.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery.fancybox.min.js"></script>
+    <script src="jquery/fancybox.js"></script>
+    <script>
+        if(document.querySelector('#datepicker')){
+            $( "#datepicker" ).datepicker({
+                dayNamesMin: [ "ВС", "ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ" ],
+                dayNamesShort: [ "Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота" ],
+                monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+                monthNamesShort: [ "Ян", "Фев", "Мар", "Апр", "Май", "Ин", "Ил", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
+                firstDay: 1,
+            });
+        }
+    </script>
+</body>
+</html>

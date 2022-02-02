@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Новости</title>
+</head>
+<body>
+
+    <!-- Верхнее меню -->
+    <nav class="nav-top container-block">
+        <ul class="nav-top__listing text-16">
+            <li class="nav-top__item">
+                <a class="nav-top__link" href="#">
+                    <svg class="nav-top__icon icon">
+                        <use xlink:href="icons/sprite.svg#school" />
+                    </svg>
+                    Школа одаренных детей
+                </a>
+            </li>
+            <li class="nav-top__item">
+                <a class="nav-top__link" href="#">
+                    <svg class="nav-top__icon icon">
+                        <use xlink:href="icons/sprite.svg#document" />
+                    </svg>
+                    Документы и отчеты
+                </a>
+            </li>
+            <li class="nav-top__item">
+                <a class="nav-top__link" href="#">
+                    <svg class="nav-top__icon icon">
+                        <use xlink:href="icons/sprite.svg#media-books" />
+                    </svg>
+                    Научная деятельность
+                </a>
+            </li>
+            <li class="nav-top__item">
+                <a class="nav-top__link" href="#">
+                    <svg class="nav-top__icon icon">
+                        <use xlink:href="icons/sprite.svg#hall" />
+                    </svg>
+                    Концертный зал
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Шапка документа -->
+    <header class="header container-block"> 
+        <a class="header__logo" href="#">
+            <img class="header__logo-image" src="img/logo.png" alt="" loading="lazy">
+        </a>
+        <div class="header__director text-14">
+            <div class="header__person">
+                <img class="header__person-image" src="img/director.png" alt="" loading="lazy">
+            </div>
+            <div class="header__director-info">
+                <div class="header__info-title">ВИКТОР ЗАХАРЧЕНКО</div>
+                <div class="header__info-subtitle">Художественный руководитель<br>и главный дирижер</div>
+                <a class="header__info-link page-link" href="#">Узнать больше</a>
+            </div>
+        </div>
+        <div class="header__contact text-14">
+            <div class="header__version">
+                <svg class="header__version-icon icon text-20">
+                    <use xlink:href="icons/sprite.svg#eye" />
+                </svg>
+                ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ
+            </div>
+            <div class="header__address">
+                Россия, 350063, Краснодар, ул. Красная, 5 Билетная касса: <a class="header__tel" href="tel: +78612684426">8 (861) 268 44 26</a>
+            </div>
+            <div class="header__social social text-24">
+                <a class="social__item social__item--color-main" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#ok" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-main" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#yt" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-main" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#inst" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-main" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#fb" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-main" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#tw" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-main" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#vk" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигационное меню -->
+    <nav class="nav container-block">
+        <div class="nav__burger" id="burger">
+            <span class="nav__burger-line nav__line-1"></span>
+            <span class="nav__burger-line nav__line-2"></span>
+            <span class="nav__burger-line nav__line-3"></span>
+        </div>
+        <ul class="nav__items text-16">
+            <li class="nav__item">
+                <a class="nav__link" href="#">Онлайн-магазин</a>
+            </li>
+            <li class="nav__item">
+                <span class="nav__link nav__submenu">
+                    <input class="nav__checkbox" id="submenu" type="checkbox">
+                    <label class="nav__label" for="submenu">
+                        О хоре
+                        <svg class="nav__icon icon">
+                            <use xlink:href="icons/sprite.svg#arrow" />
+                        </svg>
+                    </label>
+                    <ul class="nav__listing listing text-16">
+                        <li class="listing__item">
+                            <a class="listing__link" href="#">История</a>
+                        </li>
+                        <li class="listing__item">
+                            <a class="listing__link" href="#">Состав</a>
+                        </li>
+                        <li class="listing__item">
+                            <a class="listing__link" href="#">Медиа</a>
+                        </li>
+                    </ul>
+                </span>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">СМИ о нас</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Гастроли</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Афиша</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Контакты</a>
+            </li>
+        </ul>
+        <span class="nav__basket">
+            <svg class="nav__basket-icon icon">
+                <use xlink:href="icons/sprite.svg#basket" />
+            </svg>
+            <span class="nav__basket-text">Корзина</span>
+            <span class="nav__basket-quantity">(2)</span>
+        </span>
+        <button class="nav__btn btn btn--light">Купить билет онлайн</button>
+    </nav>
+
+    <!-- Мобильное меню -->
+    <section class="mobile">
+        <header class="mobile__head">
+            <a class="mobile__main" href="#">
+                <img class="mobile__logo" src="img/logo.png" alt="" loading="lazy">
+            </a>
+            <span class="mobile__exit">&#10006;</span>
+        </header>
+        <nav class="mobile__nav text-18">
+            <a class="mobile__link" href="#">Онлайн-магазин</a>
+            <span class="mobile__link mobile__submenu">
+                О хоре
+                <svg class="mobile__icon icon text-12">
+                    <use xlink:href="icons/sprite.svg#arrow" />
+                </svg>
+            </span>
+            <ul class="mobile__listing text-16">
+                <li class="mobile__listing-item">
+                    <a class="mobile__listing-link" href="#">История</a>
+                </li>
+                <li class="mobile__listing-item">
+                    <a class="mobile__listing-link" href="#">Состав</a>
+                </li>
+                <li class="mobile__listing-item">
+                    <a class="mobile__listing-link" href="#">Медиа</a>
+                </li>
+            </ul>
+            <a class="mobile__link" href="#">СМИ о нас</a>
+            <a class="mobile__link" href="#">Гастроли</a>
+            <a class="mobile__link" href="#">Афиша</a>
+            <a class="mobile__link" href="#">Школа одаренных детей</a>
+            <a class="mobile__link" href="#">Документы и отчеты</a>
+            <a class="mobile__link" href="#">Научная деятельность</a>
+            <a class="mobile__link" href="#">Концертный зал</a>
+            <a class="mobile__link" href="#">Контакты</a>
+        </nav>
+        <div class="mobile__contact contact-info text-16">
+            <div class="contact-info__item">
+                <div class="contact-info__title">
+                    <svg class="icon">
+                        <use xlink:href="icons/sprite.svg#address" />
+                    </svg>
+                    Адрес
+                </div>
+                <div class="contact-info__address">г. Краснодар ул. Красная, 5</div>
+            </div>
+            <div class="contact-info__item">
+                <div class="contact-info__title">
+                    <svg class="icon">
+                        <use xlink:href="icons/sprite.svg#tel" />
+                    </svg>
+                    Билетная касса
+                </div>
+                <a class="contact-info__tel text-22" href="tel: +78612684426">8 (861) 268 44 26</a>
+            </div>
+            <div class="contact-info__item">
+                <div class="contact-info__title">
+                    <svg class="icon">
+                        <use xlink:href="icons/sprite.svg#time" />
+                    </svg>
+                    Режим работы
+                </div>
+                <div class="contact-info__address">
+                    С 9:00 - 18:00<br>
+                    <span class="contact-info__title">(перерыв с 13: 00-14: 00)</span><br>
+                    Выходные: сб, вс
+                </div>
+            </div>
+        </div>
+        <div class="mobile__social social">
+            <a class="social__item social__item--color-white" href="#">
+                <svg class="social__icon icon">
+                    <use xlink:href="icons/sprite.svg#ok" />
+                </svg>
+            </a>
+            <a class="social__item social__item--color-white" href="#">
+                <svg class="social__icon icon">
+                    <use xlink:href="icons/sprite.svg#yt" />
+                </svg>
+            </a>
+            <a class="social__item social__item--color-white" href="#">
+                <svg class="social__icon icon">
+                    <use xlink:href="icons/sprite.svg#inst" />
+                </svg>
+            </a>
+            <a class="social__item social__item--color-white" href="#">
+                <svg class="social__icon icon">
+                    <use xlink:href="icons/sprite.svg#fb" />
+                </svg>
+            </a>
+            <a class="social__item social__item--color-white" href="#">
+                <svg class="social__icon icon">
+                    <use xlink:href="icons/sprite.svg#tw" />
+                </svg>
+            </a>
+            <a class="social__item social__item--color-white" href="#">
+                <svg class="social__icon icon">
+                    <use xlink:href="icons/sprite.svg#vk" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Новости -->
+    <section class="news-block page-content container-block">
+        <div class="page-bread-crumbs text-12"><a class="page-bread-crumbs__link" href="">Главная</a>><a class="page-bread-crumbs__link" href="">Новости</a></div>
+        <h1 class="news-block__title page-title">Новости</h1>
+        <div class="feed text-16">
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_1.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        1 сентября 2021 года стартовала всероссийская
+                        культурная программа «Пушкинская карта».
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_2.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        Внимание! Появилась вакансия!
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_3.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        С Днем Рождения, Сергей Николаевич!
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_4.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        25 августа 1792 года на Тамань
+                        высадились первые Черноморские казаки
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_1.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        1 сентября 2021 года стартовала всероссийская
+                        культурная программа «Пушкинская карта».
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_2.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        Внимание! Появилась вакансия!
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_3.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        С Днем Рождения, Сергей Николаевич!
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_4.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        25 августа 1792 года на Тамань
+                        высадились первые Черноморские казаки
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_1.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        1 сентября 2021 года стартовала всероссийская
+                        культурная программа «Пушкинская карта».
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_2.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        Внимание! Появилась вакансия!
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_3.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        С Днем Рождения, Сергей Николаевич!
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_4.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        25 августа 1792 года на Тамань
+                        высадились первые Черноморские казаки
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_1.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        1 сентября 2021 года стартовала всероссийская
+                        культурная программа «Пушкинская карта».
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_2.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        Внимание! Появилась вакансия!
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_3.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        С Днем Рождения, Сергей Николаевич!
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+            <div class="feed__item">
+                <div class="feed__picture">
+                    <img class="feed__image page-image" src="img/news_4.png" alt="" loading="lazy">
+                </div>
+                <div class="feed__info">
+                    <div class="feed__subtitle text-12">
+                        <svg class="feed__icon icon">
+                            <use xlink:href="icons/sprite.svg#date" />
+                        </svg>
+                        30 октября 2021
+                    </div>
+                    <p class="feed__text">
+                        25 августа 1792 года на Тамань
+                        высадились первые Черноморские казаки
+                    </p>
+                    <button class="feed__btn btn btn--grey">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <div class="map" id="map"></div>
+
+    <!-- Подвал -->
+    <footer class="footer container-block">
+        <div class="footer__item footer__logo text-16">
+            <img class="footer__image" src="img/footer_logo.png" alt="" loading="lazy">
+            <p class="footer__text">
+                Министерство культуры Краснодарского края<br><br>
+                Государственное бюджетное научно-творческое учреждение культуры
+                Краснодарского края “Кубанский казачий хор”
+            </p>
+            <div class="footer__social social text-24">
+                <a class="social__item social__item--color-white" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#ok" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-white" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#yt" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-white" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#inst" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-white" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#fb" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-white" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#tw" />
+                    </svg>
+                </a>
+                <a class="social__item social__item--color-white" href="#">
+                    <svg class="social__icon icon">
+                        <use xlink:href="icons/sprite.svg#vk" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer__item footer__nav text-16">
+            <span class="footer__title text-22">навигация</span>
+            <ul class="footer__listing">
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Афиша</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Гастроли</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Онлайн-магазин</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">СМИ о нас</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Научная деятельность</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__item footer__chorus text-16">
+            <span class="footer__title text-22">о хоре</span>
+            <ul class="footer__listing">
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">История</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Состав</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Медиа</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Концертный зал</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Школа одаренных детей</a>
+                </li>
+                <li class="footer__listing-item">
+                    <a class="footer__link" href="#">Документы и отчеты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__item footer__contact text-16">
+            <div class="footer__title text-22">Контакты</div>
+            <div class="contact-info text-16">
+                <div class="contact-info__item">
+                    <div class="contact-info__title">
+                        <svg class="icon">
+                            <use xlink:href="icons/sprite.svg#address" />
+                        </svg>
+                        Адрес
+                    </div>
+                    <div class="contact-info__address">г. Краснодар ул. Красная, 5</div>
+                </div>
+                <div class="contact-info__item">
+                    <div class="contact-info__title">
+                        <svg class="icon">
+                            <use xlink:href="icons/sprite.svg#tel" />
+                        </svg>
+                        Билетная касса
+                    </div>
+                    <a class="contact-info__tel text-22" href="tel: +78612684426">8 (861) 268 44 26</a>
+                </div>
+                <div class="contact-info__item">
+                    <div class="contact-info__title">
+                        <svg class="icon">
+                            <use xlink:href="icons/sprite.svg#time" />
+                        </svg>
+                        Режим работы
+                    </div>
+                    <div class="contact-info__address">
+                        С 9:00 - 18:00<br>
+                        <span class="contact-info__title">(перерыв с 13: 00-14: 00)</span><br>
+                        Выходные: сб, вс
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Нижний плеер -->
+    <section class="player-bottom player -player- container-block">
+        <div class="player-bottom__container player__container">
+            <div class="player-bottom__playlist player__playlist">
+                <button class="player-bottom__playlist-btn player__playlist-btn btn btn--light" data-fancybox data-type="ajax" data-src="modals/player.html">Открыть плейлист</button>
+                <img class="player-bottom__playlist-image player__playlist-image" src="img/player.png" alt="" loading="lazy">
+            </div>
+            <div class="player-bottom__song player__song text-14">
+                <div class="player-bottom__info player__info">
+                    <span class="player-bottom__song-name player__song-name text-22 -song-">Темно бледно-зеленая детская комнатка</span>
+                    <span class="player-bottom__song-author player__song-author -cover-">Музыка: В. Захарченко; Слова: А. Блока</span>
+                </div>
+                <audio class="player-bottom__song-audio player__song-audio -audio-" src="audio/Track1.mp3"></audio>
+                <div class="player-bottom__track player__track">
+                    <svg class="player__prev player__icon -prev- icon">
+                        <use xlink:href="icons/sprite.svg#player-prev" />
+                    </svg>
+                    <svg class="player__play player__icon -play- icon">
+                        <use xlink:href="icons/sprite.svg#player-play" />
+                    </svg>
+                    <svg class="player__next player__icon -next- icon">
+                        <use xlink:href="icons/sprite.svg#player-next" />
+                    </svg>
+                    <div class="player__line -progress-line-">
+                        <span class="player__progress -progress-"></span>
+                    </div>
+                    <div class="player__time"> 
+                        <span class="-time-start-">1:10</span> / <span class="-time-end-">2:48</span>
+                    </div>
+                    <svg class="player__volume player__icon -volume- icon">
+                        <use xlink:href="icons/sprite.svg#player-volume" />
+                    </svg>
+                    <div class="player__list" data-fancybox data-type="ajax" data-src="modals/player.html">&#9776;</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Мобильный плеер -->
+    <div class="player-btn">
+        <svg class="player-btn__icon icon">
+            <use xlink:href="icons/sprite.svg#player" />
+        </svg>
+    </div> 
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/map.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/card-product.js"></script>
+    <script src="js/smart-menu.js"></script>
+    <script src="js/svg-ns.js"></script>
+    <script src="js/news-block.js"></script>
+    <script src="js/form-submit.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery.fancybox.min.js"></script>
+    <script src="jquery/fancybox.js"></script>
+    <script>
+        if(document.querySelector('#datepicker')){
+            $( "#datepicker" ).datepicker({
+                dayNamesMin: [ "ВС", "ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ" ],
+                dayNamesShort: [ "Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота" ],
+                monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+                monthNamesShort: [ "Ян", "Фев", "Мар", "Апр", "Май", "Ин", "Ил", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
+                firstDay: 1,
+            });
+        }
+    </script>
+</body>
+</html>

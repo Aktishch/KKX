@@ -1,0 +1,77 @@
+<div class="cities fancybox-content">
+    <div class="cities__title text-22">Выберите город</div>
+    <label class="cities__search">
+        <input class="cities__search-input text-16" type="text" placeholder="Ваш город">
+        <svg class="cities__search-icon icon text-16">
+            <use xlink:href="icons/sprite.svg#search" />
+        </svg>
+    </label>
+    <div class="cities__items">
+        <label class="cities__item">
+            <input class="cities__radio" type="radio" name="town" data-city="Москва">
+            <span class="cities__text">Москва</span>
+            <svg class="cities__item-icon icon text-16">
+                <use xlink:href="icons/sprite.svg#checkbox" />
+            </svg>
+        </label>
+        <label class="cities__item">
+            <input class="cities__radio" type="radio" name="town" data-city="Геленджик">
+            <span class="cities__text">Геленджик</span>
+            <svg class="cities__item-icon icon text-16">
+                <use xlink:href="icons/sprite.svg#checkbox" />
+            </svg>
+        </label>
+        <label class="cities__item">
+            <input class="cities__radio" type="radio" name="town" data-city="Екатеринбург">
+            <span class="cities__text">Екатеринбург</span>
+            <svg class="cities__item-icon icon text-16">
+                <use xlink:href="icons/sprite.svg#checkbox" />
+            </svg>
+        </label>
+        <label class="cities__item">
+            <input class="cities__radio" type="radio" name="town" data-city="Краснодар">
+            <span class="cities__text">Краснодар</span>
+            <svg class="cities__item-icon icon text-16">
+                <use xlink:href="icons/sprite.svg#checkbox" />
+            </svg>
+        </label>
+        <label class="cities__item">
+            <input class="cities__radio" type="radio" name="town" data-city="Новосибирск">
+            <span class="cities__text">Новосибирск</span>
+            <svg class="cities__item-icon icon text-16">
+                <use xlink:href="icons/sprite.svg#checkbox" />
+            </svg>
+        </label>
+        <label class="cities__item">
+            <input class="cities__radio" type="radio" name="town" data-city="Ростов-на-Дону">
+            <span class="cities__text">Ростов-на-Дону</span>
+            <svg class="cities__item-icon icon text-16">
+                <use xlink:href="icons/sprite.svg#checkbox" />
+            </svg>
+        </label>
+        <label class="cities__item">
+            <input class="cities__radio" type="radio" name="town" data-city="Санкт-Петербург">
+            <span class="cities__text">Санкт-Петербург</span>
+            <svg class="cities__item-icon icon text-16">
+                <use xlink:href="icons/sprite.svg#checkbox" />
+            </svg>
+        </label>
+    </div>
+
+    <script>
+        (()=>{
+            const citiesRadio = document.querySelectorAll('.cities__radio');
+            let basketCity = document.querySelector('.basket__city');
+            let basketInput = document.querySelector('.basket__city-input');
+
+            function cityClick(event){
+                basketCity.textContent = event.target.dataset.city;
+                basketInput.value = event.target.dataset.city;
+            }
+
+            citiesRadio.forEach(element => {
+                element.addEventListener('change', cityClick)
+            });
+        })() ;
+    </script>
+</div>
