@@ -27,7 +27,18 @@ document.addEventListener('submit', (event)=>{
         event.preventDefault();
         const valid = validateForm(event.target);
         if(valid){
-            event.target.reset();
+            let formData = new FormData(event.target);
+            let promise = fetch('/php/telegram-bot.php', {
+                method: 'POST',
+                body: formData
+            }).then((response) => response.text())
+            .then((result) => {
+                event.target.reset();
+                $.fancybox.open({
+                    type: 'ajax',
+                    src: '/modals/submit.html',
+                });
+            });
         }
     }
 });
