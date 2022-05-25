@@ -3856,24 +3856,34 @@ body{
     justify-content: space-between;
     gap: 8px;
 }
-.concert-nav__item{
+.concert-nav__link{
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    color: var(--color-black);
     background-color: var(--color-white);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 9px 30px;
+    padding: 10px 30px;
     text-align: center;
     min-width: max-content;
 }
-.concert-nav__link{
-    display: block;
-    color: var(--color-black);
+.concert-nav__text{
     font-weight: 500;
     padding-bottom: 2px;
     border-bottom: 2px dotted rgb(27, 27, 27, 0.6);
 }
 .concert-nav__link:hover{
     color: var(--color-honey);
-    border-bottom: 2px dotted var(--color-honey);
+}
+.concert-nav__link:hover .concert-nav__text{
+    border-color: var(--color-honey);
+}
+.concert-nav__link--card{
+    color: var(--color-honey);
+}
+.concert-nav__link--card .concert-nav__text{
+    border-color: var(--color-honey);
 }
 .concert-nav__btn{
     position: absolute;
@@ -3924,6 +3934,13 @@ body{
 }
 
 @media(max-width: 576px){
+    .concert-nav__link{
+        min-width: auto;
+    }
+    .concert-nav__text{
+        padding-bottom: 0;
+        border-bottom: none;
+    }
     .concert-nav__btn{
         position: relative;
     }

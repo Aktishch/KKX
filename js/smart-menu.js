@@ -33,6 +33,11 @@ if(concertBlock){
                     concertTitle.classList.add('hidden');
                 }
             }
+            if(concertListing.querySelectorAll('li').length == 0){
+                concertBtn.style.display = 'none';
+            }else{
+                concertBtn.style.display = 'block';
+            }
         }
     }
     
