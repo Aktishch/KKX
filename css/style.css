@@ -55,7 +55,9 @@
     --color-pink: #E0B5C5;
     --color-pink-light: #E7E8EA;
     --color-green: #2DA447;
+    --color-green-dark: #35A919;
     --color-red: #D01214;
+    --color-red-dark: #D83636;
     --color-map: #EFDAAB;
     --color-country: #D8B270;
     --color-orange-light: #FFE0B1;
@@ -2676,6 +2678,20 @@ body{
     background: linear-gradient(90deg, var(--color-silver) 0%, rgba(236, 239, 241, 0) 100%);
     border-radius: 8px;
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    color: var(--color-black);
+}
+.media__back {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    position: relative;
+    left: -10px;
 }
 .media__icon{
     font-size: 16px;
@@ -2921,6 +2937,17 @@ body{
     padding: 12px 0;
     width: 180px;
 }
+.photo__images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.photo__image {
+    position: relative;
+    padding-top: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
 @media(max-width: 1200px){
 
     .photo__picture:nth-child(4){
@@ -2946,6 +2973,10 @@ body{
     }
     .photo__picture{
         width: 110px;
+    }
+    .photo__images{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
     }
 }
 @media(max-width: 440px){
@@ -4121,7 +4152,7 @@ body{
     border-radius: 6px;
 }
 .basket__icon{
-    color: var(--color-white);
+    color: var(--color-main);
     font-size: 24px;
 }
 .basket__warehouse{
@@ -5402,5 +5433,33 @@ body{
     }
     .submit-modal__subtitle{
         margin-bottom: 15px;
+    }
+}
+
+/* Вывод отправки */
+.shipment{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.shipment__image{
+    font-size: 82px;
+}
+.shipment__image--success{
+    color: var(--color-green-dark);
+}
+.shipment__image--error{
+    color: var(--color-red-dark);
+}
+.shipment__text{
+    font-weight: 400;
+}
+
+@media(max-width: 576px){
+    .shipment{
+        padding: 30px 0;
     }
 }
