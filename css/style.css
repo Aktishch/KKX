@@ -4348,40 +4348,15 @@ body{
 }
 .touring__info{
     position: relative;
-    padding: 23px 36px;
     border-radius: 6px;
-    overflow: hidden;
 }
 .touring__map{
     position: relative;
-}
-.touring__svg{
-    position: relative;
     width: 100%;
-    color: var(--color-map);
-    margin-bottom: 30px;
-}
-.touring__map path:hover{
-    color: var(--color-merigold);
-}
-.touring__country{
-    color: var(--color-country);
-}
-.touring__cities{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 13px;
-}
-.touring__city{
-    width: 24px;
-}
-.touring__text{
-    font-weight: 500;
-}
-.-pointer-events-{
-    pointer-events: none;
+    height: 600px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
 .touring__click{
     background-color: rgba(255, 255, 255, 0.8);
@@ -4453,8 +4428,8 @@ body{
     .touring__link{
         border-bottom: none;
     }
-    .touring__info{
-        padding: 10px;
+    .touring__map{
+        height: 450px;
     }
     .touring__click{
         padding: 7px;
@@ -5478,5 +5453,54 @@ body{
 @media(max-width: 576px){
     .shipment{
         padding: 30px 0;
+    }
+}
+
+.history__text {
+    font-size: 16px;
+    line-height: 1.2;
+    opacity: 0.8;
+}
+
+.history__img {
+    display: block;
+    max-width: 100%;
+    border-radius: 18px;
+}
+
+.history__img--ver {
+    min-width: 300px;
+}
+
+.history__img--hor {
+    min-width: 450px;
+}
+
+.history__subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lora';
+}
+
+.history__card {
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+.history__card--blur {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media(max-width: 990px) {
+    .history__card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .history__img {
+        min-width: auto;
     }
 }
