@@ -5605,6 +5605,7 @@ nav.nav::after{
     display: flex;
     align-items: center;
     padding: 8px;
+    color: var(--color-black);
 }
 
 .corruption__pic {
