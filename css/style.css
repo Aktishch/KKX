@@ -3969,9 +3969,11 @@ nav.nav::after{
 }
 .concert-nav__listing .concert-nav__item{
     background-color: var(--color-coin);
-    min-width: none;
     max-width: 100%;
     padding: 9px 25px;
+}
+.concert-nav__listing .concert-nav__link {
+    min-width: auto;
 }
 .concert-nav__listing.active{
     opacity: 1;
@@ -3982,9 +3984,6 @@ nav.nav::after{
 }
 
 @media(max-width: 576px){
-    .concert-nav__link{
-        min-width: auto;
-    }
     .concert-nav__text{
         padding-bottom: 0;
         border-bottom: none;
