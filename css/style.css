@@ -4419,7 +4419,7 @@ nav.nav::after{
 }
 .touring__items{
     position: relative;
-    display: none;
+    padding: 15px 40px;
     color: var(--color-dark);
 }
 .touring__item{
@@ -4445,7 +4445,7 @@ nav.nav::after{
 }
 .touring__listing{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -4531,17 +4531,15 @@ nav.nav::after{
     .touring__subtitle{
         display: none;
     }
-    .touring__info{
-        padding: 15px 40px;
-    }
     .touring__map{
         display: none;
     }
     .touring__click{
         display: none;
     }
-    .touring__items{
-        display: block;
+    .touring__listing{
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }
 
