@@ -687,11 +687,11 @@ nav.nav::after {
     text-decoration: none;
 }
 
-.nav__label:hover .nav__icon {
+.nav__submenu:hover .nav__icon {
     transform: rotate(-90deg);
 }
 
-.nav__label:hover + .listing {
+.nav__submenu:hover .listing {
     top       : 34px;
     opacity   : 1;
     visibility: visible;
