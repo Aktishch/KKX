@@ -6833,3 +6833,55 @@ nav.nav::after {
 .modal-info .fancybox-button svg {
     color: #AF1A4C;
 }
+
+/* 404 */
+.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error-page__img {
+    display: block;
+    width: 100%;
+    max-width: 540px;
+}
+
+.error-page__text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.error-page__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.error-page__btn {
+    padding: 12px 30px;
+}
+
+@media(max-width: 576px) {
+    .error-page__text {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .error-page__text br {
+        display: none;
+    }
+
+    .error-page__btns {
+        flex-direction: column;
+        grid-gap: 15px;
+    }
+
+    .error-page__btn {
+        width: 190px;
+    }
+}
