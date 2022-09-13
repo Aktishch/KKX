@@ -1213,6 +1213,20 @@ nav.nav::after {
     position: relative;
 }
 
+.concert__slider .concert__ticket:first-child {
+    margin-bottom: 20px;
+}
+
+@media(max-width: 576px) {
+    .concert__slider .image-slider__slide {
+        display: flex;
+    }
+    .concert__slider .concert__ticket:first-child {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
+
 .concert__slider .swiper-button-prev:hover::after,
 .concert__slider .swiper-button-next:hover::after {
     background-color: rgba(255, 255, 255, 0.3);

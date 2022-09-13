@@ -8,22 +8,21 @@ new Swiper('.concert__slider .image-slider', {
         clickable: true,
     },
     grabCursor: true,
+    slidesPerGroup: 1,
     speed: 1200,
+    spaceBetween: 20,
     breakpoints: {
         0: {
+            slidesPerView: 0.8,
+        },
+        576: {
             slidesPerView: 1.1,
-            slidesPerGroup: 1,
-            spaceBetween: 35,
         },
         768: {
             slidesPerView: 1.5,
-            slidesPerGroup: 2,
-            spaceBetween: 25,
         },
         1200: {
             slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 35,
         },
     }
 });
