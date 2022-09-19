@@ -1842,10 +1842,12 @@ nav.nav::after {
 }
 
 .production__item-border {
+    height: 100%;
     border        : 2px solid rgba(255, 255, 255, 0.2);
     border-radius : 18px;
     display       : flex;
     flex-direction: column;
+    flex-grow: 1;
     padding       : 44px 35px;
 }
 
@@ -1868,6 +1870,7 @@ nav.nav::after {
 }
 
 .production__btn {
+    margin-top: auto;
     width: 134px;
 }
 
