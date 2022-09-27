@@ -2362,7 +2362,7 @@ nav.nav::after {
 
 .information__items {
     display              : grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap             : 15px;
 }
 
@@ -2383,7 +2383,7 @@ nav.nav::after {
 .information__text {
     text-align : center;
     font-weight: 600;
-    padding    : 23px 16px;
+    padding    : 15px 10px;
 }
 
 .information__banner {
