@@ -962,11 +962,12 @@ nav.nav::after {
 
 /* ККХ */
 .chorus {
-    padding-top   : 86px;
-    padding-bottom: 422px;
-    background    : linear-gradient(74.55deg, rgba(175, 26, 76, 0.1) 0%, rgba(255, 255, 255, 0) 41.1%), linear-gradient(253.47deg, rgba(214, 169, 87, 0.2) 0.7%, rgba(255, 255, 255, 0) 55.83%), #F8F9FA;
-    overflow      : hidden;
-    position      : relative;
+    padding-top      : 86px;
+    padding-bottom   : 422px;
+    /* background    : linear-gradient(74.55deg, rgba(175, 26, 76, 0.1) 0%, rgba(255, 255, 255, 0) 41.1%), linear-gradient(253.47deg, rgba(214, 169, 87, 0.2) 0.7%, rgba(255, 255, 255, 0) 55.83%), #F8F9FA; */
+    background       : url('../img/new-year.png') no-repeat center / cover;
+    overflow         : hidden;
+    position         : relative;
 }
 
 .chorus__title {
@@ -1221,9 +1222,10 @@ nav.nav::after {
     .concert__slider .image-slider__slide {
         display: flex;
     }
+
     .concert__slider .concert__ticket:first-child {
         margin-bottom: 0;
-        margin-right: 20px;
+        margin-right : 20px;
     }
 }
 
@@ -1842,12 +1844,12 @@ nav.nav::after {
 }
 
 .production__item-border {
-    height: 100%;
+    height        : 100%;
     border        : 2px solid rgba(255, 255, 255, 0.2);
     border-radius : 18px;
     display       : flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow     : 1;
     padding       : 44px 35px;
 }
 
@@ -1871,7 +1873,7 @@ nav.nav::after {
 
 .production__btn {
     margin-top: auto;
-    width: 134px;
+    width     : 134px;
 }
 
 .production__clothes {
@@ -2455,9 +2457,13 @@ nav.nav::after {
 
 /* Подвал */
 .footer {
-    padding-top          : 57px;
-    padding-bottom       : 79px;
-    background           : linear-gradient(96.43deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 73.11%), var(--color-main);
+    padding-top             : 57px;
+    padding-bottom          : 79px;
+    /* background           : linear-gradient(96.43deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 73.11%), var(--color-main); */
+    background              :
+        linear-gradient(96.43deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 73.11%),
+        url('../img/footer-bg.png') no-repeat bottom / contain,
+        var(--color-main);
     display              : grid;
     grid-template-columns: 370px 177px 215px 1fr;
     grid-gap             : 55px;
@@ -2524,6 +2530,7 @@ nav.nav::after {
         padding-bottom       : 15px;
         grid-template-columns: 1fr;
         grid-gap             : 35px;
+        background           : linear-gradient(96.43deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 73.11%), var(--color-main);
     }
 
     .footer__contact {
@@ -6853,30 +6860,30 @@ nav.nav::after {
 
 /* 404 */
 .error-page {
-    display: flex;
-    align-items: center;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction : column;
 }
 
 .error-page__img {
-    display: block;
-    width: 100%;
+    display  : block;
+    width    : 100%;
     max-width: 540px;
 }
 
 .error-page__text {
-    text-align: center;
+    text-align   : center;
     margin-bottom: 30px;
-    font-weight: 400;
-    line-height: 19px;
+    font-weight  : 400;
+    line-height  : 19px;
 }
 
 .error-page__btns {
-    display: flex;
-    align-items: center;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    grid-gap: 30px;
+    grid-gap       : 30px;
 }
 
 .error-page__btn {
@@ -6885,7 +6892,7 @@ nav.nav::after {
 
 @media(max-width: 576px) {
     .error-page__text {
-        font-size: 14px;
+        font-size    : 14px;
         margin-bottom: 15px;
     }
 
@@ -6895,7 +6902,7 @@ nav.nav::after {
 
     .error-page__btns {
         flex-direction: column;
-        grid-gap: 15px;
+        grid-gap      : 15px;
     }
 
     .error-page__btn {
