@@ -962,12 +962,11 @@ nav.nav::after {
 
 /* ККХ */
 .chorus {
-    padding-top      : 86px;
-    padding-bottom   : 422px;
-    /* background    : linear-gradient(74.55deg, rgba(175, 26, 76, 0.1) 0%, rgba(255, 255, 255, 0) 41.1%), linear-gradient(253.47deg, rgba(214, 169, 87, 0.2) 0.7%, rgba(255, 255, 255, 0) 55.83%), #F8F9FA; */
-    background       : url('../img/new-year.png') no-repeat center / cover;
-    overflow         : hidden;
-    position         : relative;
+    padding-top   : 86px;
+    padding-bottom: 422px;
+    background    : linear-gradient(74.55deg, rgba(175, 26, 76, 0.1) 0%, rgba(255, 255, 255, 0) 41.1%), linear-gradient(253.47deg, rgba(214, 169, 87, 0.2) 0.7%, rgba(255, 255, 255, 0) 55.83%), #F8F9FA;
+    overflow      : hidden;
+    position      : relative;
 }
 
 .chorus__title {
@@ -2457,13 +2456,9 @@ nav.nav::after {
 
 /* Подвал */
 .footer {
-    padding-top             : 57px;
-    padding-bottom          : 79px;
-    /* background           : linear-gradient(96.43deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 73.11%), var(--color-main); */
-    background              :
-        linear-gradient(96.43deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 73.11%),
-        url('../img/footer-bg.png') no-repeat bottom / contain,
-        var(--color-main);
+    padding-top          : 57px;
+    padding-bottom       : 79px;
+    background           : linear-gradient(96.43deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 73.11%), var(--color-main);
     display              : grid;
     grid-template-columns: 370px 177px 215px 1fr;
     grid-gap             : 55px;
@@ -6919,4 +6914,15 @@ nav.nav::after {
     .error-page__btn {
         width: 190px;
     }
+}
+
+.new-year-theme .chorus {
+    background: url('../img/new-year.png') no-repeat center / cover;
+}
+
+.new-year-theme .footer {
+    background:
+        linear-gradient(96.43deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 73.11%),
+        url('../img/footer-bg.png') no-repeat bottom / contain,
+        var(--color-main);
 }
