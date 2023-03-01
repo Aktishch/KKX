@@ -2867,7 +2867,7 @@ nav.nav::after {
     transition: 0.3s all linear;
 }
 
-.accordion__checkbox:checked+.accordion__head .accordion__arrow {
+.accordion__checkbox:checked+.accordion__label .accordion__head .accordion__arrow {
     transform: rotate(-90deg);
 }
 
@@ -3004,7 +3004,8 @@ nav.nav::after {
 }
 
 .personal__image {
-    object-fit: contain;
+    object-fit     : cover;
+    object-position: top left;
 }
 
 .personal__title {
