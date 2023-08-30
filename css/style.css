@@ -7153,6 +7153,7 @@ nav.nav::after {
 .vacancy {
     padding-top: 60px;
     padding-bottom: 60px;
+    background: #F5F7F9;
 }
 
 .vacancy-title {
@@ -7221,12 +7222,16 @@ nav.nav::after {
     padding: 32px;
     align-self: stretch;
 }
+.vacancy-item-content{
+    flex-grow: 1;
+}
 
 .vacancy-item-title {
     font-family: 'Lora';
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 0.5em;
+    text-transform: uppercase;
 }
 
 .vacancy-item-info {
