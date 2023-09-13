@@ -1154,5 +1154,21 @@
             });
         }
     </script>
+    <script>
+        const showBannerHoliday = () => {
+            if (!sessionStorage.getItem('holiday') && sessionStorage.getItem('holiday') !== 'show') {
+                setTimeout(() => {
+                    $.fancybox.open({
+                        type: 'ajax',
+                        src: '/modals/dialog-holiday.html',
+                    })
+        
+                    sessionStorage.setItem('holiday', 'show')
+                }, 3000)
+            }
+        }
+
+        showBannerHoliday()
+    </script>
 </body>
 </html>
