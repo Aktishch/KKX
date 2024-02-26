@@ -94,3 +94,25 @@ new Swiper('.product__slider .image-slider', {
         },
     }
 });
+
+const counteractionSliders = document.querySelectorAll('.counteraction__slider')
+
+counteractionSliders.forEach(slider => {
+    if (!slider) return
+
+    const swiper = slider.querySelector('.counteraction-swiper')
+    const prev = slider.querySelector('.swiper-button-prev')
+    const next = slider.querySelector('.swiper-button-next')
+
+    new Swiper(swiper, {
+        navigation: {
+            nextEl: next,
+            prevEl: prev
+        },
+        loop: true,
+        grabCursor: true,
+        slidesPerGroup: 1,
+        slidesPerView: 'auto',
+        spaceBetween: 32,
+    });
+})
