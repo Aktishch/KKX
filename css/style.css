@@ -4509,6 +4509,12 @@ nav.nav::after {
     margin-bottom: 57px;
 }
 
+.product__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .product__content {
     grid-column: span 2;
     display: flex;
@@ -4655,7 +4661,6 @@ nav.nav::after {
 }
 
 .product__btn {
-    margin-top: 26px;
     width: 130px;
 }
 
@@ -4748,7 +4753,7 @@ nav.nav::after {
 @media(max-width: 576px) {
     .product__form {
         grid-template-columns: 1fr;
-        grid-gap: 15px;
+        gap: 15px;
         margin-bottom: 30px;
     }
 
